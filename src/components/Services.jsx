@@ -1,7 +1,8 @@
-import React from "react";
+
 import { Code2, Layout, Globe } from "lucide-react";
 
 export default function Services() {
+
   const services = [
     {
       name: "Desarrollo Web",
@@ -62,17 +63,13 @@ export default function Services() {
 
         {/* Imagen lateral */}
         <img
-          src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/features/group-image-1.png"
+          src="./assets/img-service.png"
           alt="Servicios de desarrollo web"
           className="max-w-md w-full md:max-w-lg rounded-xl select-none"
         />
       </div>
-
-      {/* Fuente Montserrat */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-        * { font-family: 'Montserrat', sans-serif; }
-      `}</style>
     </section>
   );
 }
+
+
