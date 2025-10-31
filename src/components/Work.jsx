@@ -4,62 +4,61 @@ import { ExternalLink } from "lucide-react";
 export default function Work() {
 
   const work = [
-        {
-            name: 'Comercio Electrónico',
-            icon: './assets/ecommerce.png',
-            description: 'Diseño Web',
-            demo: 'https://plantilla-ecommerce-six.vercel.app',
-        },
-
-                {
-            name: 'Academia en línea',
-            icon: './assets/academia.png',
-            description: 'Aplicación Móvil',
-            demo: 'https://academy-six-iota.vercel.app',
-        },
-        {
-            name: 'Sitio de fotografía',
-            icon: './assets/edukukgt.png',
-            description: 'Diseño Web',
-            demo: 'https://edukukgt.vercel.app',
-        },
-        {
-            name: 'Edukuk',
-            icon: './assets/code.png',
-            description: 'Diseño de interfaz',
-            demo: 'https://plataforma-xi-two.vercel.app',
-        }
-
+    {
+      name: 'Comercio Electrónico',
+      icon: './assets/ecommerce.png',
+      description: 'Diseño Web',
+      demo: 'https://plantilla-ecommerce-six.vercel.app',
+    },
+    {
+      name: 'Academia en línea',
+      icon: './assets/academia.png',
+      description: 'Aplicación Móvil',
+      demo: 'https://academy-six-iota.vercel.app',
+    },
+    {
+      name: 'Sitio de fotografía',
+      icon: './assets/edukukgt.png',
+      description: 'Diseño Web',
+      demo: 'https://edukukgt.vercel.app',
+    },
+    {
+      name: 'Edukuk',
+      icon: './assets/code.png',
+      description: 'Diseño de interfaz',
+      demo: 'https://plataforma-xi-two.vercel.app',
+    }
   ];
 
   const [stopScroll, setStopScroll] = React.useState(false);
 
   return (
     <>
-
       <style>{`
-                .marquee-inner {
-                    animation: marqueeScroll linear infinite;
-                }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        * { font-family: 'Montserrat', sans-serif; }
 
-                @keyframes marqueeScroll {
-                    0% { transform: translateX(0%); }
-                    100% { transform: translateX(-50%); }
-                }
+        .marquee-inner {
+          animation: marqueeScroll linear infinite;
+        }
 
-            `}</style>
+        @keyframes marqueeScroll {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
 
       <div
         id="work"
-        className="w-full px-[12%] py-10 scroll-mt-20 text-[#1f2937] dark:text-white"
+        className="w-full px-[12%] py-10 scroll-mt-20 text-[#1f2937] dark:text-white transition-colors duration-500"
       >
-        <h4 className="text-center mb-2 text-lg font-Ovo text-[#2563eb] dark:text-[#60a5fa]">
+        <h4 className="text-center mb-2 text-lg text-[#2563eb] dark:text-[#60a5fa]">
           Mi portafolio
         </h4>
-        <h2 className="text-center text-5xl font-Ovo text-[#1f2937] dark:text-white">
+        <h2 className="text-center text-5xl mb-5 font-semibold">
           Proyectos Destacados
         </h2>
-        <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-[#1f2937]/80 dark:text-gray-300">
+        <p className="text-center max-w-2xl mx-auto mb-12 text-[#1f2937]/80 dark:text-gray-300">
           Bienvenido a mi portafolio de desarrollo web. Explora una colección de
           proyectos que reflejan mi experiencia y crecimiento en el desarrollo
           front-end.

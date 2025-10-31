@@ -1,63 +1,78 @@
-import { Code2, Layout, Globe, Server } from "lucide-react";
+import React from "react";
+import { Code2, Layout, Globe } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
       name: "Desarrollo Web",
-      icon: <Layout className="w-10 h-10 text-[#2563eb] dark:text-[#60a5fa]" />,
+      icon: <Layout className="w-8 h-8 text-[#2563eb]" />,
       description:
         "Diseño y desarrollo de sitios web modernos y optimizados utilizando HTML, CSS y JavaScript.",
     },
     {
       name: "Aplicaciones Web",
-      icon: <Code2 className="w-10 h-10 text-[#2563eb] dark:text-[#60a5fa]" />,
+      icon: <Code2 className="w-8 h-8 text-[#2563eb]" />,
       description:
         "Desarrollo de aplicaciones web completas con ReactJS, NodeJS y bases de datos como MongoDB (MERN) y PostgreSQL (PERN), ofreciendo soluciones escalables y seguras.",
     },
     {
       name: "Plantillas Web",
-      icon: <Globe className="w-10 h-10 text-[#2563eb] dark:text-[#60a5fa]" />,
+      icon: <Globe className="w-8 h-8 text-[#2563eb]" />,
       description:
         "Plantillas listas para usar, ideales para negocios, portafolios y emprendimientos digitales.",
     },
   ];
 
   return (
-    <div
+    <section
       id="services"
-      className="w-full px-[12%] py-10 scroll-mt-20 text-[#1f2937] dark:text-white"
+      className="w-full px-[12%] py-16 scroll-mt-20 text-[#1f2937] dark:text-gray-200 transition-colors duration-500 font-montserrat"
     >
       {/* Encabezado */}
-      <h4 className="text-center mb-2 text-lg font-Ovo text-[#2563eb] dark:text-[#60a5fa]">
+      <h4 className="text-center mb-2 text-lg text-[#2563eb] dark:text-[#60a5fa]">
         Servicios que ofrezco
       </h4>
-      <h2 className="text-center text-5xl font-Ovo text-[#1f2937] dark:text-white">
+      <h2 className="text-center text-5xl mb-12 font-semibold">
         Mis servicios
       </h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-[#1f2937]/80 dark:text-gray-300">
-        Ofrezco soluciones profesionales en desarrollo web y aplicaciones
-        modernas con tecnologías actuales.
-      </p>
 
-      {/* Tarjetas de servicios */}
-      <div className="grid grid-cols-auto gap-6 my-10">
-        {services.map((service) => (
-          <div
-            key={service.name}
-            className="border border-gray-300 dark:border-white/30 rounded-lg px-8 py-12 cursor-pointer
-                                   hover:shadow-[0_0_20px_rgba(37,99,235,0.2)] dark:hover:shadow-[0_0_20px_rgba(96,165,250,0.2)]
-                                   hover:bg-[#2563eb]/10 dark:hover:bg-white/10 hover:-translate-y-1 duration-500"
-          >
-            {service.icon}
-            <h3 className="text-lg my-4 font-semibold text-[#1f2937] dark:text-white">
-              {service.name}
-            </h3>
-            <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
-              {service.description}
-            </p>
-          </div>
-        ))}
+      {/* Contenedor principal */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        {/* Sección de texto y servicios */}
+        <div className="flex flex-col gap-8 w-full max-w-xl">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="flex gap-4 items-start cursor-pointer group transition-transform duration-500 hover:-translate-y-1"
+            >
+              <div className="flex items-center justify-center p-3 rounded-full bg-[#2563eb]/10 group-hover:bg-[#2563eb]/20 transition-colors">
+                {service.icon}
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 group-hover:text-[#2563eb] dark:group-hover:text-[#60a5fa] transition-colors">
+                  {service.name}
+                </h3>
+                <p className="text-sm leading-6 text-gray-600 dark:text-gray-300">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Imagen lateral */}
+        <img
+          src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/features/group-image-1.png"
+          alt="Servicios de desarrollo web"
+          className="max-w-md w-full md:max-w-lg rounded-xl select-none"
+        />
       </div>
-    </div>
+
+      {/* Fuente Montserrat */}
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        * { font-family: 'Montserrat', sans-serif; }
+      `}</style>
+    </section>
   );
 }

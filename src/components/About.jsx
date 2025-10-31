@@ -4,7 +4,6 @@ import {
   FolderCode,
   Atom,
   FileCode2,
-  Github,
   GitBranch,
   Server,
 } from "lucide-react";
@@ -42,12 +41,12 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20 text-[#1f2937] dark:text-white"
+      className="w-full px-[12%] py-10 scroll-mt-20 text-[#1f2937] dark:text-white font-montserrat"
     >
-      <h4 className="text-center mb-2 text-lg font-Ovo text-[#2563eb] dark:text-[#60a5fa]">
+      <h4 className="text-center mb-2 text-lg text-[#2563eb] dark:text-[#60a5fa]">
         Introducción
       </h4>
-      <h2 className="text-center text-5xl font-Ovo text-[#1f2937] dark:text-white">
+      <h2 className="text-center text-5xl text-[#1f2937] dark:text-white">
         Sobre mí
       </h2>
 
@@ -72,7 +71,7 @@ export default function About() {
 
         {/* Descripción */}
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo text-[#1f2937]/80 dark:text-gray-300">
+          <p className="mb-10 max-w-2xl text-[#1f2937]/80 dark:text-gray-300">
             Soy{" "}
             <span className="text-[#2563eb] font-semibold">Edgar Romero</span>,
             desarrollador de páginas web de Guatemala. Inicié en el mundo de la
@@ -109,7 +108,7 @@ export default function About() {
           </ul>
 
           {/* Herramientas */}
-          <h4 className="my-6 font-Ovo text-[#2563eb] dark:text-[#60a5fa]">
+          <h4 className="my-6 text-[#2563eb] dark:text-[#60a5fa]">
             Herramientas que utilizo
           </h4>
           <ul className="flex flex-wrap items-center gap-3 sm:gap-5">

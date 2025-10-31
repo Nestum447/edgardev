@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 text-[#1f2937] dark:text-white">
+        <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 text-[#1f2937] dark:text-white font-montserrat">
 
             {/* Imagen de perfil */}
             <img 
@@ -10,18 +10,18 @@ export default function Header() {
             />
 
             {/* Saludo */}
-            <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo text-[#2563eb] dark:text-[#60a5fa]">
+            <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 text-[#2563eb] dark:text-[#60a5fa]">
                 ¡Hola! Soy Edgar Romero
                 <img src="./assets/hand-icon.png" alt="mano saludando" className="w-6 mb-1" />
             </h3>
 
             {/* Descripción principal */}
-            <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+            <h1 className="text-3xl sm:text-6xl lg:text-[66px]">
                 Desarrollador web con sede en Guatemala.
             </h1>
 
             {/* Información adicional */}
-            <p className="max-w-2xl mx-auto font-Ovo text-[#1f2937]/80 dark:text-gray-300">
+            <p className="max-w-2xl mx-auto text-[#1f2937]/80 dark:text-gray-300">
                 Inicié en el mundo de la programación a finales de 2023. Soy el creador de{" "}
                 <a 
                     href="https://www.edukuk.com/" 
