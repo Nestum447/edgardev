@@ -17,12 +17,12 @@ export default function Header() {
 
             {/* Descripción principal */}
             <h1 className="text-3xl sm:text-6xl lg:text-[66px]">
-                Desarrollador web con sede en Guatemala.
+                Consultor en Tecnologia, Procesos y Finanzas con sede en El Salvador.
             </h1>
 
             {/* Información adicional */}
             <p className="max-w-2xl mx-auto text-[#1f2937]/80 dark:text-gray-300">
-                Inicié en el mundo de la programación a finales de 2023. Soy el creador de{" "}
+                Inicié en el mundo de la Tecnologia por conviccion de que es una herramienta que mejora nuestras vidas. Soy el creador de{" "}
                 <a 
                     href="https://www.edukuk.com/" 
                     target="_blank" 
