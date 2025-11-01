@@ -11,7 +11,7 @@ export default function Header() {
 
             {/* Saludo */}
             <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 text-[#2563eb] dark:text-[#60a5fa]">
-                ¡Hola! Soy Edgar Romero
+                ¡Hola! Soy Nestor Carpio
                 <img src="./assets/hand-icon.png" alt="mano saludando" className="w-6 mb-1" />
             </h3>
 
