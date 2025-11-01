@@ -4,7 +4,7 @@ export default function Header() {
 
             {/* Imagen de perfil */}
             <img 
-                src="./assets/profile-img.png" 
+                src="./assets/Nestor.jpg" 
                 alt="Edgar Romero" 
                 className="rounded-full w-32 border-4 border-[#2563eb]" 
             />
