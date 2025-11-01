@@ -54,7 +54,7 @@ export default function About() {
         {/* Imagen de perfil */}
         <div className="max-w-max mx-auto relative">
           <img
-            src="./assets/user-image.png"
+            src="./assets/Nestor.jpg"
             alt="Edgar Romero"
             className="w-64 sm:w-80 rounded-3xl max-w-none border-4 border-[#2563eb]/20 dark:border-[#2563eb]/40"
           />
@@ -73,7 +73,7 @@ export default function About() {
         <div className="flex-1">
           <p className="mb-10 max-w-2xl text-[#1f2937]/80 dark:text-gray-300">
             Soy{" "}
-            <span className="text-[#2563eb] font-semibold">Edgar Romero</span>,
+            <span className="text-[#2563eb] font-semibold">Nestor Carpio</span>,
             desarrollador de páginas web de Guatemala. Inicié en el mundo de la
             programación a finales de 2023, creando proyectos con JavaScript,
             React y Node.js. También soy el creador de{" "}
