@@ -31,7 +31,7 @@ export default function Header() {
                 >
                     https://github.com/Nestum447
                 </a>{" "}
-                y creador de contenido apasionado por el desarrollo web.
+            creador de contenido tecnologico y educativo apasionado por el desarrollo web.
             </p>
 
             {/* Botones */}
