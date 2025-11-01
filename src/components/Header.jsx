@@ -24,12 +24,12 @@ export default function Header() {
             <p className="max-w-2xl mx-auto text-[#1f2937]/80 dark:text-gray-300">
                 Inicié en el mundo de la Tecnologia por conviccion de que es una herramienta que mejora nuestras vidas. Soy el creador de{" "}
                 <a 
-                    href="https://www.edukuk.com/" 
+                    href="https://github.com/Nestum447" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-[#2563eb] font-semibold hover:underline"
                 >
-                    edukuk.com
+                    https://github.com/Nestum447
                 </a>{" "}
                 y creador de contenido apasionado por el desarrollo web.
             </p>
